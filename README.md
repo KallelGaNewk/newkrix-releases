@@ -11,7 +11,16 @@ All desktop installers and release packages are hosted on the GitHub Releases pa
 ### Windows
 - `.exe` NSIS installer (recommended)
 - `.msi` Windows Installer
-- Tauri Updater delta & signature bundles
+
+### macOS
+- `.dmg` for Apple Silicon (aarch64) and Intel (x64)
+
+### Linux
+- `.AppImage`, `.deb` and `.rpm`
+
+Every release also carries the updater bundles with their `.sig` signatures and `latest.json`, which the in-app updater reads. You normally don't need to download these by hand.
+
+> Calls are built into the app. They have been verified on macOS and Windows 11; Linux builds are published but calls are untested there.
 
 ## In-App Auto Updates
 
